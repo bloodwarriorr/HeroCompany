@@ -1,0 +1,72 @@
+﻿@model HeroCompany.Models.Hero
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Hero</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ability)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ability)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainBeginning)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainBeginning)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SuitColors)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SuitColors)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartingPower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartingPower)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentPower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentPower)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
