@@ -17,16 +17,13 @@ password-"specific user pwd"
 
 You should insert data into sql+change the sql connection string to your local machine, with 2 options:
 
-1)
-
-Use the migration file inside Dal layer, with the following commands inside PM command line:
+1) Use the migration file inside Dal layer, with the following commands inside PM command line:
 
 Enable-Migrations(if needed)
 Add-Migration Initial
 Update-Database
 
-2)
 
-Use the api itself route to register a trainer, then insert trainers. (swaager ui shows route)
+2) Use the api itself route to register a trainer, then insert trainers. (swaager ui shows route)
 
 
