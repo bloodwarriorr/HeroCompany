@@ -5,6 +5,7 @@ Use Postman:
 
 Generate a refresh token with the route:https://localhost:44372/token, 
 attach to your request in a x-www-form-urlencoded method the following:
+
 key:		value:
 grant_type 	password
 username	"any user name from db"
